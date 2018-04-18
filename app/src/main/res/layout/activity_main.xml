@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,7 +12,12 @@
     <com.liyi.multiple.MultipleStatusView
         android:id="@+id/multipleStatusView_custom"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:empty="@layout/custom_test_view"
+        app:error="@layout/custom_test_view"
+        app:loading="@layout/custom_test_view"
+        app:network_poor="@layout/custom_test_view"
+        app:specified="@layout/custom_test_view" />
 
     <LinearLayout
         android:layout_width="60dp"

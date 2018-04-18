@@ -15,14 +15,13 @@ public class StatusViewUtil {
 
     public StatusViewUtil(MultipleStatusView defaultView, MultipleStatusView customView) {
         this.defaultView = defaultView;
-
-        customView.setView(MultipleStatusView.ViewType.TYPE_LOADING, R.layout.test_custom_view);
-        customView.setView(MultipleStatusView.ViewType.TYPE_NETWORK_POOR, R.layout.test_custom_view);
-        customView.setView(MultipleStatusView.ViewType.TYPE_EMPTY, R.layout.test_custom_view);
-        customView.setView(MultipleStatusView.ViewType.TYPE_ERROR, R.layout.test_custom_view);
-        customView.setView(MultipleStatusView.ViewType.TYPE_SPECIFIED, R.layout.test_custom_view);
-        customView.setView(10, R.layout.test_custom_view);
-        customView.setView(20, R.layout.test_custom_view);
+//        customView.setView(MultipleStatusView.ViewType.TYPE_LOADING, R.layout.custom_test_view);
+//        customView.setView(MultipleStatusView.ViewType.TYPE_NETWORK_POOR, R.layout.custom_test_view);
+//        customView.setView(MultipleStatusView.ViewType.TYPE_EMPTY, R.layout.custom_test_view);
+//        customView.setView(MultipleStatusView.ViewType.TYPE_ERROR, R.layout.custom_test_view);
+//        customView.setView(MultipleStatusView.ViewType.TYPE_SPECIFIED, R.layout.custom_test_view);
+        customView.setView(10, R.layout.custom_test_view);
+        customView.setView(20, R.layout.custom_test_view);
         this.customView = customView;
     }
 
