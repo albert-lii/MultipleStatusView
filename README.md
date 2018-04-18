@@ -1,0 +1,2 @@
+# MultipleStatusView
+一个可以用来切换多种状态的view
