@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultipleStatusView">
+        <attr name="loading" format="reference" />
+        <attr name="network_poor" format="reference" />
+        <attr name="empty" format="reference" />
+        <attr name="error" format="reference" />
+        <attr name="specified" format="reference" />
+    </declare-styleable>
+</resources>
