@@ -5,6 +5,26 @@
 ## 关于
 一个可以用来切换多种状态视图的view，适用于加载失败状态、空数据状态、网络异常状态等场景，同时支持自定义视图！
 
+## 演示
+![demogif]
+
+## 添加依赖
+- 使用Gradle
+```java
+    dependencies {
+         compile 'com.liyi.view:multiple-status-view:1.0.0'
+    }
+```
+- 使用Maven
+```java
+   <dependency>
+      <groupId>com.liyi.view</groupId>
+      <artifactId>multiple-status-view</artifactId>
+      <version>1.0.0</version>
+      <type>pom</type>
+   </dependency>
+```
+
 ## 默认提供的类型
 |  类型  |  说明  |
 |:-------|:------:|
@@ -53,7 +73,7 @@
 ```
 
 ## 赞赏
-如果你感觉 `AutoGridView` 帮助到了你，可以点右上角 "Star" 支持一下 谢谢！:blush:
+如果你感觉 `MultipleStatusView` 帮助到了你，可以点右上角 "Star" 支持一下 谢谢！:blush:
 
 ## LICENSE
 Copyright 2017 liyi
@@ -71,8 +91,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[releasesvg]:https://img.shields.io/badge/Release-1.0.0-brightgreen.svg
-[apisvg]: https://img.shields.io/badge/API-9+-brightgreen.svg
-[licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg
+[releasesvg]:https://img.shields.io/badge/version-1.0.0-brightgreen.svg
+[apisvg]: https://img.shields.io/badge/sdk-9+-brightgreen.svg
+[licensesvg]: https://img.shields.io/badge/license-Apache--2.0-blue.svg
 [license]:http://www.apache.org/licenses/LICENSE-2.0
 [statussvg]:https://img.shields.io/librariesio/github/phoenixframework/phoenix.svg  
+
+[demogif]:https://github.com/albert-lii/MultipleStatusView/blob/master/snapshot/demo.gif
