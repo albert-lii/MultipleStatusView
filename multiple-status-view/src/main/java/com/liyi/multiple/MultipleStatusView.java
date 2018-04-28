@@ -54,13 +54,23 @@ public class MultipleStatusView extends FrameLayout {
         mViewRes = new SparseArray<>();
         mHandlers = new SparseArray<>();
 
-        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MultipleStatusView, defStyle, 0);
-        mViewRes.put(ViewType.TYPE_LOADING, a.getResourceId(R.styleable.MultipleStatusView_loading, R.layout.multiple_view_loading));
-        mViewRes.put(ViewType.TYPE_NETWORK_POOR, a.getResourceId(R.styleable.MultipleStatusView_network_poor, R.layout.multiple_view_network_poor));
-        mViewRes.put(ViewType.TYPE_EMPTY, a.getResourceId(R.styleable.MultipleStatusView_empty, R.layout.multiple_view_empty));
-        mViewRes.put(ViewType.TYPE_ERROR, a.getResourceId(R.styleable.MultipleStatusView_error, R.layout.multiple_view_error));
-        mViewRes.put(ViewType.TYPE_SPECIFIED, a.getResourceId(R.styleable.MultipleStatusView_specified, INVALID_LAYOUT_ID));
-        a.recycle();
+        mViewRes.put(ViewType.TYPE_LOADING, R.layout.multiple_view_loading);
+        mViewRes.put(ViewType.TYPE_NETWORK_POOR, R.layout.multiple_view_network_poor);
+        mViewRes.put(ViewType.TYPE_EMPTY, R.layout.multiple_view_empty);
+        mViewRes.put(ViewType.TYPE_ERROR, R.layout.multiple_view_error);
+        mViewRes.put(ViewType.TYPE_SPECIFIED, INVALID_LAYOUT_ID);
+
+        if (attrs != null) {
+            final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MultipleStatusView, defStyle, 0);
+            if (a != null) {
+                mViewRes.put(ViewType.TYPE_LOADING, a.getResourceId(R.styleable.MultipleStatusView_loading, R.layout.multiple_view_loading));
+                mViewRes.put(ViewType.TYPE_NETWORK_POOR, a.getResourceId(R.styleable.MultipleStatusView_network_poor, R.layout.multiple_view_network_poor));
+                mViewRes.put(ViewType.TYPE_EMPTY, a.getResourceId(R.styleable.MultipleStatusView_empty, R.layout.multiple_view_empty));
+                mViewRes.put(ViewType.TYPE_ERROR, a.getResourceId(R.styleable.MultipleStatusView_error, R.layout.multiple_view_error));
+                mViewRes.put(ViewType.TYPE_SPECIFIED, a.getResourceId(R.styleable.MultipleStatusView_specified, INVALID_LAYOUT_ID));
+                a.recycle();
+            }
+        }
     }
 
     /**
