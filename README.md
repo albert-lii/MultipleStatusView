@@ -11,8 +11,17 @@
 ## 添加依赖
 - 使用Gradle
 ```java
+   // 注：如果添加依赖成功，则此句不必添加，此句作用仅为当项目在被审核时，紧急需要使用时添加
+   allprojects {
+       repositories {
+           ...
+           // 如果添加依赖时，报找不到项目时（项目正在审核），可以添加此句maven地址，如果找到项目，可不必添加
+           maven { url "https://dl.bintray.com/albertlii/android-maven/" }
+       }
+    }
+    
     dependencies {
-         compile 'com.liyi.view:multiple-status-view:1.0.0'
+         compile 'com.liyi.view:multiple-status-view:1.0.1'
     }
 ```
 - 使用Maven
@@ -20,7 +29,7 @@
    <dependency>
       <groupId>com.liyi.view</groupId>
       <artifactId>multiple-status-view</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>pom</type>
    </dependency>
 ```
@@ -91,7 +100,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[releasesvg]:https://img.shields.io/badge/version-1.0.0-brightgreen.svg
+[releasesvg]:https://img.shields.io/badge/version-1.0.1-brightgreen.svg
 [apisvg]: https://img.shields.io/badge/sdk-9+-brightgreen.svg
 [licensesvg]: https://img.shields.io/badge/license-Apache--2.0-blue.svg
 [license]:http://www.apache.org/licenses/LICENSE-2.0
