@@ -82,7 +82,7 @@
 ```
 
 ## 赞赏
-如果你感觉 `MultipleStatusView` 帮助到了你，可以点右上角 "Star" 支持一下 谢谢！:blush:
+如果你感觉 `MultipleStatusView` 帮助到了你，可以点右上角 "Star" 支持一下哦！:blush:
 
 ## LICENSE
 Copyright 2017 liyi
